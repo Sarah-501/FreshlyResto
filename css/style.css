@@ -1,0 +1,536 @@
+/********************** GLOBAL **************************/
+html{
+    font-size: 62.5%;
+}
+body{
+        font-size: 1.8rem;
+        margin:0;
+        font-family: 'Athiti', sans-serif;
+}
+/*********************** HEADER ***********************/
+header{
+    background-image: linear-gradient(#EBE2DB, white);
+}
+
+.logo> a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.logo a>strong{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.logo a>img{
+    width:15rem;
+}
+
+ nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color:#EBE2DB;
+}   
+nav a, .logo a{
+    text-decoration: none;
+    color: #000300;
+    font-weight: 1000;
+    border:0.1rem;
+    width: 100%;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: #4C4442;
+    color:#EBE2DB;
+    width: 100%;
+    text-align: center;
+}
+nav a:last-child{
+    border: 0.01rem solid #2e2927;
+    width: 100%;
+    text-align: center;
+}
+
+/******************* MAIN **************************/
+
+/**__________________ WELCOME PART ______________**/
+ .welcome{
+    padding: 2rem 2rem;
+}
+.welcome p{
+    text-align: center;
+}
+.welcome img{
+    max-width:100%; 
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5;
+}
+h3{
+    font-size: 2rem;
+}
+
+h1,h2,h3,h4,legend{
+    font-family: 'Merienda', cursive;
+    position: relative;
+    text-align: center;
+}
+h1::before , h1::after, h2::before , h2::after, h3::before , h3::after, strong::before , strong::after,form legend::before, form legend::after{
+    font-family: FontAwesome;
+    content: "\002605";
+    color: #8D0000;
+} 
+
+/**_________________ SPECIAL MENUS PART ______________**/
+ .special_menu{
+    padding: 2rem 2rem;
+}
+
+.menu article{
+    background-color: #EBE2DB;
+    padding: 2rem 0;
+    width:90%;
+    margin: 3rem auto;
+}
+.menu img{
+    width :100%;
+    height: auto;
+}
+.menu figure, .menu-pictures figure,.desert-pictures figure, .cocktail-pictures figure{
+    position: relative;
+    margin: 0;
+} 
+.menu figcaption, .menu-pictures figcaption, .desert-pictures figcaption, .cocktail-pictures figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: rgba(76, 67, 67, 0.9);
+    color: white;
+    position: absolute;
+    top:0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.menu figcaption::after, .menu-pictures figcaption::after , .desert-pictures figcaption::after, .cocktail-pictures figcaption::after{
+    border: 4px solid white;
+    content: "";
+    position: absolute;
+    top:2rem; 
+    left: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 5rem;
+    }
+.menu figure:hover figcaption,.menu-pictures figure:hover figcaption,.desert-pictures figure:hover figcaption, .cocktail-pictures figure:hover figcaption{
+    opacity: 1;
+} 
+.menu p{
+    text-align: center;
+    font-size: 1.5rem;
+}   
+.menu li{
+    list-style: none;
+    border-bottom:2px dashed #444444;
+    padding:1rem 0 1rem 1rem;
+}
+.menu li::before{
+    font-family: FontAwesome;
+    content: "\002605";
+    color: #8D0000;
+    font-size: 1.5rem;
+}
+.menu h3{
+    text-align: center;
+}
+.menu hr{
+    border: 0.1rem dashed #4C4442;
+}
+.menu ul{
+    padding-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+.menu a{
+    width:30%;
+    text-decoration: none;
+    padding: 1rem 15rem;
+    background-color:#4C4442 ;
+    color:#EBE2DB;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.menu a::before{
+    font-family: FontAwesome;
+    content:"\f0f5";
+    color: #EBE2DB;
+} 
+
+
+/************************* FOOTER ***********************/
+.card{
+    background-image: url(../images/footer-bg.jpg);
+    color:#EBE2DB;
+    text-align: center;
+    padding: 3rem 0;
+    font-weight: 700;
+}
+.card hr{
+    border: 0.1rem dashed #EBE2DB;
+}
+.card h4{
+    font-size: 1.8rem;
+}
+.card p{
+    font-size: 1.6rem;
+}
+.footer{
+    background-color: #444444;
+    padding-top:3rem ;
+    padding-bottom: 3rem;
+}
+.footer> img{
+    display: block;
+    margin: auto;
+    width: 30px;
+}
+.footer> p{
+    color:#EBE2DB; 
+    text-align: center;
+    margin-top: -10px;
+    font-size: small;
+}
+.footer a{
+    color :#EBE2DB;
+    width: 100%;
+    text-decoration: none;
+}
+
+/************* ABOUT-US PART *****************/
+main-about-us{
+    margin:auto;
+}
+.about-us,.private-diving{
+    padding: 1rem 2rem;
+}
+.about-us video{
+    width:80%;
+    margin:auto;
+    display: block;
+}
+.private-diving img{
+    width:90%;
+    transition-duration: 1s;
+    box-shadow: 12px 12px 20px grey;
+}
+.private-pictures{
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #EBE2DB;
+}
+.private-pictures figure{
+    margin:0;
+}
+ /*___________ ANIMATION ABOUT-US __________*/
+.private-diving img:hover{
+    transform: scale(2);
+    width:50%;
+}
+
+/************* CONTACT-US PART *****************/
+.contact-us {
+    margin: auto;
+}
+.contact {
+    text-align: center;
+}
+form{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    background-color: #EBE2DB;
+    /* margin:1rem 2rem; */
+    padding: 2rem 5rem;
+    margin:auto;
+    width: 60%;
+}
+.resevation-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reservation,.details{
+    width:47.5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+form label{
+    display: block;
+}
+form input {
+    padding: 10px 16px;;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #4C4442;
+
+}
+form input[type="submit"]{
+    width:30%;
+    text-decoration: none;
+    background-color:#4C4442 ;
+    color:#EBE2DB;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+form select{
+    padding: 0.5rem 9.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #4C4442;
+}
+form textarea {
+    width: 100%;
+}
+form abbr{
+    margin-left:-1rem;
+    color: #8D0000;
+    font-size: 2rem;
+    font-weight:1000;
+}
+
+/*********** DETAILS OF OUR MENUS PART ************/
+.main-menus img{
+    width:100%;
+}
+.main-menus figcaption>img{
+    width:8%;
+}
+.main-menus figcaption{
+    line-height: 0.1;
+}
+.details-menus h2,
+.details-menus p{
+    text-align: center;
+}
+.choise-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:1rem;
+}
+.choise-details button{
+    background-color:#EBE2DB;
+    color:#4C4442;
+    border: none;
+    margin-right: 1rem;
+    width:7%;
+    padding:1rem;
+}
+.choise-details button:hover{
+    background-color: #4C4442;
+    color:#EBE2DB;
+}
+
+.menu-pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+    background-color: #EBE2DB;
+    margin-top: 4rem;
+    width:90%;
+    margin: 2rem auto;
+    padding: 4rem;
+}
+
+.menu-pictures div{
+   width: 45%;
+}
+
+.deserts, .cocktails{
+    text-align: center;
+}
+.desert-pictures, .cocktail-pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+    background-color: #EBE2DB;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+}
+.desert-pictures figure, .cocktail-pictures figure{
+    width:45%;
+}
+/************ TABLETTE VERSION ************/
+@media screen and (min-width:768px) and (max-width:1024px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem ;
+    }
+    nav a:last-child{
+        border: none;
+    }
+    .card{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }
+    .card article{
+        width:40%;
+        padding: 1rem 2rem;
+    }
+    /************* ABOUT-US PAGE PART *****************/
+    .private-pictures article{
+        display: flex;
+        justify-content:center ;
+        flex-wrap: wrap;
+    }
+    .private-pictures figure{
+        width:38%;
+    }
+    .private-diving img:hover{
+        transform: scale(2);
+        width:70%;
+    }
+    
+    /******* MENU PAGE PART *************/
+    .menu-pictures div{
+    width: 30%;
+    }
+    .desert-pictures, .cocktail-pictures{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+    .desert-pictures figure, .cocktail-pictures figure{
+    width:30%;
+    }
+}
+
+/************ DESKTOP VERSION ************/
+@media screen and (min-width:1025px){
+
+    body{
+        max-width:140rem;
+        margin:auto;
+    }
+    header , .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .logo> a{
+        display: flex;
+        flex-direction: ROW;
+        align-items: center;
+        justify-content: center;
+    } 
+    header nav{
+        display: inline-block;
+        background: none;
+        width: fit-content;
+    }
+    header nav>a{
+        margin-right: 3rem;
+        text-decoration: none;
+        color: #000300;
+        font-weight: 1000;
+        background-color: #EBE3DB;
+        padding: 1rem 3rem;
+    }
+    
+    nav a:hover{
+        background-color: #4C4442;
+        color:#EBE2DB;
+        width: 10%;
+    }
+    nav a:last-child{
+        border: none;
+    }
+
+    .welcome img{
+        width:40%;
+        margin:2rem 1rem;
+        float: right;
+        display: inline-block;
+    }
+
+    .special_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu hr{
+        border-right-width: 54px dashed;
+    }
+    .menu article{
+        width:30%;
+    }
+    .menu article>a{
+        padding:1rem 10rem;
+    }
+    .card{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }
+    .card article{
+        width:40%;
+        padding: 1rem 2rem;
+    }
+    /************* ABOUT-US PART *****************/
+        .private-pictures article{
+            display: flex;
+            justify-content:center ;
+            flex-wrap: wrap;
+        }
+        .private-pictures figure{
+            width:40%;
+        }
+        .private-diving img:hover{
+            transform: scale(2);
+            width:80%;
+        }
+
+     /******* MENU PAGE PART *************/
+     .menu-pictures div{
+        width: 30%;
+     }
+     .desert-pictures, .cocktail-pictures{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+     .desert-pictures figure, .cocktail-pictures figure{
+        width:30%;
+    }
+}
+

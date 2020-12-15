@@ -1,0 +1,205 @@
+/********************** GLOBAL **************************/
+html{
+    font-size: 62.5%;
+}
+body{
+        font-size: 1.8rem;
+        margin:0;
+        font-family: 'Athiti', sans-serif;
+        max-width:140rem;
+        margin:auto;
+}
+/**************** HEADER ***********/
+header{
+    background-image: linear-gradient(#EBE2DB, white);
+}
+
+header , .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a>strong{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.logo a>img{
+    width:15rem;
+}
+.logo> a{
+    display: flex;
+    flex-direction: ROW;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000300;
+} 
+header nav{
+    display: inline;
+    background:none;
+}
+header nav>a{
+    margin-right: 3rem;
+    text-decoration: none;
+    color: #000300;
+    font-weight: 1000;
+    background-color: #EBE3DB;
+    padding: 1rem 3rem;
+}
+
+nav a:hover{
+    background-color: #4C4442;
+    color:#EBE2DB;
+    width: 10%;
+}
+nav a:last-child{
+    border: none;
+}
+ /****************** MAIN ***************/
+ h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5;
+}
+h3{
+    font-size: 2rem;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Merienda', cursive;
+    position: relative;
+    text-align: center;
+}
+h1::before , h1::after, h2::before , h2::after, h3::before , h3::after, strong::before , strong::after{
+    font-family: FontAwesome;
+    content: "\002605";
+    color: #8D0000;
+} 
+ /******** WELCOME PART ********/
+.welcome img{
+    width:40%;
+    margin:2rem 1rem;
+    float: right;
+    display: inline-block;
+}
+
+/*********** SPECIAL MENU PART ***********/
+.special_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu article{
+    background-color: #EBE2DB;
+}
+.menu img{
+    width :100%;
+    height: auto;
+}
+.menu hr{
+    border-right-width: 54px dashed;
+}
+.menu article{
+    width:30%;
+}
+
+.menu img{
+    width :100%;
+    height: auto;
+}
+.menu figure{
+    position: relative;
+    margin: 0;
+} 
+.menu figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: rgba(76, 67, 67, 0.9);
+    color: white;
+    position: absolute;
+    top:0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.menu figcaption::after{
+    border: 4px solid white;
+    content: "";
+    position: absolute;
+    top:2rem; 
+    left: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 5rem;
+    }
+.menu figure:hover figcaption{
+    opacity: 1;
+} 
+.menu p{
+    text-align: center;
+    font-size: 1.5rem;
+}   
+.menu a{
+    width:30%;
+    text-decoration: none;
+    padding:1rem 10rem;
+    background-color:#4C4442 ;
+    color:#EBE2DB;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.menu li{
+    list-style: none;
+}
+.menu li::before{
+    font-family: FontAwesome;
+    content: "\002605";
+    color: #8D0000;
+    font-size: 2rem;
+}
+.menu hr{
+    border: 0.1rem dashed #4C4442;
+}
+.private-pictures{
+    background-color: #EBE2DB;
+}
+/*********** FOOTER **********/
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.card article{
+    width:40%;
+    padding: 1rem 2rem;
+}
+.footer{
+    background-color: #444444;
+    padding-top:3rem ;
+    padding-bottom: 3rem;
+}
+.footer> img{
+    display: block;
+    margin: auto;
+    width: 30px;
+}
+.footer> p{
+    color:#EBE2DB; 
+    text-align: center;
+    margin-top: -10px;
+    font-size: small;
+}
+.footer a{
+    color :#EBE2DB;
+    width: 100%;
+    text-decoration: none;
+}
+

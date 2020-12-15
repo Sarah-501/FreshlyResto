@@ -1,0 +1,27 @@
+********** PAGE MENUS **********
+
+Details of our menus
+Choose your main course according to your menu !
+
+All - Meat - Vegan - Fish
+
+Grilled mussels
+Mixed vegetables
+Freshly kebabs
+Cajun shrimp
+Freshly burger
+Grilled eggplants
+Beef stew with pasta
+Grilled salmon
+Vegetable Jambalaya
+
+Deserts
+Here are the deserts you can choose to finish your meal (included in your menu).
+Tiramisu
+Freshly Pancakes
+Redberries cup
+
+Cocktails
+Winter Whiskey
+Paloma cocktail
+Bellini cocktail
